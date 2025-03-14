@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    background: linear-gradient(0.25turn, #000, #131313, #000);    
+    color: #fff;
+}
+
+/* HEADER */
+
+header nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+header nav ul a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* CONTAINER */
+
+.container {
+    background-image: url('../img/alexa-bliss.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    color: #fff;
+}
+
+.container .left {
+    font-family: 'Space Grotesk';
+    margin-top: 150px;
+    font-size: 48px;
+    text-transform: uppercase;
+    width: 860px;
+    filter: drop-shadow(15px 15px 15px red)
+}
+
+.container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.container .right p {
+    font-family: 'Gentium+Plus';
+    line-height: 22px;
+    text-align: justify;
+    padding: 15px 25px;
+    background-color: #ffffff69;
+    color: #000;
+    width: 330px;
+}
+
+/* NEWS */
+
+.news {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards img {
+    border-radius: 50px;
+    opacity: .8;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.news-container .news-1 .news-card {
+    width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+    z-index: 1;
+}
+
+.news-card-1 .card-1 .news-card {
+    width: 350px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+    bottom: 110px;
+    left: 50px;
+    z-index: 1;
+    gap: 15px;
+}
+
+.news-1 .news-card h1, .card-1 .news-card h1, .news-card-2 .card-2 .news-card h1, .news-card-2 .card-3 .news-card h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    width: inherit;
+    text-align: start;
+}
+
+.news-container-2 .news-card {
+    display: flex;
+    gap: 45px;
+}
+
+.news-card-2 .card-3 .news-card p {
+    font-size: 18px;
+}
+
+.news-card-2 .card-2 .news-card, .news-card-2 .card-3 .news-card {
+    width: 250px;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+    position: relative;
+    bottom: 140px;
+    left: 10px;
+    z-index: 1;
+    gap: 15px;
+}
+
+.news-1 .news-card p {
+    font-size: 25px;
+}
+
+.news-card-2 {
+    gap: 30px;
+}
+
+.news-1 img {
+    height: 700px;
+}
+
+.card-1 img {
+    width: 600px;
+}
+
+.news-1 {
+    height: 700px;
+}
+
+.card-1 {
+    height: 335px;
+}
+
+.card-2, .card-3 {
+    height: 320px;
+}
+
+.card-2 img, .card-3 img {
+    width: 280px;
+
+}
+
+.news-card-2 {
+    display: flex;
+}
+
+/* CHAMP */
+
+.champ {
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.champ h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.champ .campeoes-h1 {
+    font-size: 50px;
+    font-family: 'Kanit';
+    color: #5d4a1f;
+}
+
+.champs-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.champ-section {
+    width: 216px;
+    height: 290px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.champ-section:hover {
+    opacity: .8;
+}
+
+.champ-section h5 {
+    width: 90%;
+    margin: auto;
+    font-family: 'Kanit';
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #000;
+}
+
+.champ-section .champ-img {
+  position: relative;
+  bottom: 47px;
+}
+
+.champ-section .champ-img .iyo-sky {
+    position: relative;
+    top: 55px;
+    left: 7px;
+}
+
+.champ-section .champ-img .bron-breakker {
+    position: relative;
+    top: 44px;
+    left: 5px;
+}
+
+.champ-section .champ-img .lyra-valkyria {
+    position: relative;
+    top: 55px;
+    left: 7px;
+}
+
+.champ-section .champ-img .war-raiders {
+    position: relative;
+    top: 72px;
+}
+
+.champ-section .champ-img .cody {
+    position: relative;
+    top: 54px;
+    left: 12px;
+}
+
+.champ-section .champ-img .tiffany {
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
+
+.champ-section .champ-img .shinsuke {
+    position: relative;
+    top: 62px;
+    left: 12px;
+}
+
+.champ-section .champ-img .chelsea {
+    position: relative;
+    top: 70px;
+    left: 8px;
+}
+
+.champ-section .champ-img .diy {
+    position: relative;
+    top: 112px;
+} 
+
+.champ-section .champ-img .liv-raquel {
+    position: relative;
+    top: 81px;
+}
+
+/* HORARIOS */
+
+#horarios .horarios-container {
+    margin: 100px 0;
+    display: flex;
+}
+
+#horarios .raw h1, #horarios .smackdown h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#horarios .raw, #horarios .smackdown {
+    flex: 1;
+    box-shadow: 0px 0px 15px #ffffff2d;
+    border-radius: 50px;
+    margin: 0 30px;
+    gap: 20px;
+}
+
+#horarios .horarios-container img {
+    width: 75%;
+    border-radius: 15px;
+}
+
+#horarios .raw p, #horarios .smackdown p {
+    width: 75%;
+    line-height: 28px;
+}
+
+#horarios .show-container {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    text-align: justify;
+    gap: 30px;
+}
+
+#horarios .show-container a button {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#horarios .show-container a button {
+    padding: 15px 30px;
+}
+
+#horarios .show-container a button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+#horarios .raw .show-container a button {
+    background-color: red;
+    border: 0;
+    border-radius: 10px;
+}
+
+#horarios .smackdown .show-container a button {
+    background-color: blue;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+
+/* JOGO */
+
+#monster .john-cena-card {
+    border-radius: 14px;
+}
+
+#jogo  {
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/wrestlingmania.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    align-items: center;
+}
+
+.areadaluta {
+    display: flex;
+    gap: 20px;
+}
+
+#char, #monster {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lifebar {
+    width: 80%;
+    margin: auto;
+    height: 10px;
+    border: 1px solid #333;
+    background-color: #ffffffb9;
+    border-radius: 5px;
+}
+
+.lifebar .bar {
+    width: 100%;
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log {
+    text-align: center;
+    width: 430px;
+    height: 200px;
+    padding-top: 15px;
+    margin: auto;
+    margin-top: -100px;
+    border: 1px solid #99999952;
+    border-radius: 10px;
+    background-color: #000000ad;
+    overflow-y: scroll;
+    scrollbar-width: thin;    
+    scrollbar-color: red black;
+}
+
+.name {
+    text-transform: uppercase;
+    background-color: #000000e3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.ataque {
+    width: 150px;
+    height: 25px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+}
+
+.ataque:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.76);
+}
+
+#winnerMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Inicialmente invisível */
+    pointer-events: none; /* Não permite interação com o fundo */
+    z-index: 1000;
+    transition: opacity 1s; /* Animação suave de fade-in */
+}
+
+#winnerName {
+    animation: zoomIn 2s ease-out;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+footer {
+    margin-top: 100px;
+    padding: 40px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-copy {
+    font-size: 18px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 20px;
+}
+
